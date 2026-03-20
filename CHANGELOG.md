@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 — 2026-03-20
+
+- Full Treatment: landing page, handbook, CI, security policy
+- Expanded README with game description and features
+
 ## 1.0.0 — 2026-03-20
 
 - Initial release

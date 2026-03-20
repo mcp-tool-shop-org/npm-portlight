@@ -18,7 +18,8 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "test": "node --test test/*.test.js"
+    "test": "node --test test/*.test.js",
+    "verify": "node --test test/*.test.js"
   },
   "dependencies": {
     "@mcptoolshop/npm-launcher": "^1.0.0"

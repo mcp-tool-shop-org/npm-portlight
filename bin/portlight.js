@@ -7,8 +7,8 @@ process.env.MCPTOOLSHOP_LAUNCH_CONFIG = JSON.stringify({
   toolName: "portlight",
   owner: "mcp-tool-shop-org",
   repo: "portlight",
-  version: "1.0.0",
-  tag: "v1.0.0",
+  version: "2.0.0",
+  tag: "v2.0.0",
 });
 
 require("@mcptoolshop/npm-launcher/bin/mcptoolshop-launch.js");

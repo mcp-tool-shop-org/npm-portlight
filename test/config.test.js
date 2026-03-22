@@ -25,8 +25,8 @@ describe("launch config", () => {
       assert.equal(config.toolName, "portlight");
       assert.equal(config.owner, "mcp-tool-shop-org");
       assert.equal(config.repo, "portlight");
-      assert.equal(config.version, "1.0.0");
-      assert.equal(config.tag, "v1.0.0");
+      assert.equal(config.version, "2.0.0");
+      assert.equal(config.tag, "v2.0.0");
     } finally {
       Module._resolveFilename = originalResolve;
     }

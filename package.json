@@ -1,6 +1,6 @@
 {
   "name": "@mcptoolshop/portlight",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Trade-first maritime strategy CLI — zero-prerequisite npx install",
   "type": "commonjs",
   "license": "MIT",

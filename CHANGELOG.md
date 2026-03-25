@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1 — 2026-03-25
+
+- SHA-pin CI workflow actions (checkout, setup-node) for supply chain security
+- Add version alignment test suite (4 tests)
+
 ## 2.0.0 — 2026-03-22
 
 - Major version bump matching Portlight v2.0.0 source release

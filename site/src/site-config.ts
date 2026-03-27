@@ -30,7 +30,7 @@ export const config: SiteConfig = {
       title: 'A Living Economy',
       subtitle: 'Trade as a commercial discipline, not a number that goes up.',
       features: [
-        { title: 'Reactive Markets', desc: 'Prices shift with every trade you make. Dump grain at a port and the price crashes. 10 ports, 8 goods, 17 routes.' },
+        { title: 'Reactive Markets', desc: 'Prices shift with every trade you make. Dump grain at a port and the price crashes. 20 ports, 18 goods, 43 routes across 5 regions.' },
         { title: 'Real Voyages', desc: 'Storms, pirates, inspections. Your provisions, hull, and crew matter. Every sailing is a calculated risk.' },
         { title: 'Contracts & Proof', desc: 'Deliver the right goods to the right port with tracked provenance. Six contract families gated by trust and standing.' },
         { title: 'Infrastructure', desc: 'Warehouses stage cargo. Brokers improve contracts. Licenses unlock premium access. Build the trade house you want.' },

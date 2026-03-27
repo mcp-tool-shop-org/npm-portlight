@@ -28,7 +28,7 @@ npm install -g @mcptoolshop/portlight
 portlight new "Captain Hawk" --type merchant
 ```
 
-Also available via pip: `pip install portlight`
+The underlying game is also available via pip (`pip install portlight`) if you prefer Python.
 
 ## Why Portlight
 
@@ -119,7 +119,7 @@ This npm package downloads the pre-built Portlight binary for your platform from
 | Concern | Detail |
 |---------|--------|
 | **Network** | HTTPS only to `github.com` CDN |
-| **Filesystem** | User cache only (`~/.cache/mcptoolshop/portlight/`) |
+| **Filesystem** | User cache only (`~/.cache/mcptoolshop/portlight/` on Linux/macOS, `%LOCALAPPDATA%\mcptoolshop\portlight\` on Windows) |
 | **Verification** | SHA256 checksum on every download |
 | **Telemetry** | None |
 | **Platforms** | Windows (x64), macOS (x64/arm64), Linux (x64) |

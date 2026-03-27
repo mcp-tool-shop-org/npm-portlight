@@ -3,42 +3,22 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mcp-tool-shop-org/brand/main/logos/portlight/readme.png" width="400" alt="Portlight">
+  <img src="https://raw.githubusercontent.com/mcp-tool-shop-org/brand/main/logos/portlight/readme.png" width="600" alt="Portlight">
 </p>
 
 <p align="center">
   <a href="https://github.com/mcp-tool-shop-org/npm-portlight/actions"><img src="https://github.com/mcp-tool-shop-org/npm-portlight/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://www.npmjs.com/package/@mcptoolshop/portlight"><img src="https://img.shields.io/npm/v/@mcptoolshop/portlight" alt="npm"></a>
   <a href="https://github.com/mcp-tool-shop-org/npm-portlight/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
-  <a href="https://mcp-tool-shop-org.github.io/npm-portlight/"><img src="https://img.shields.io/badge/docs-landing_page-blue" alt="Landing Page"></a>
+  <a href="https://mcp-tool-shop-org.github.io/npm-portlight/"><img src="https://img.shields.io/badge/docs-handbook-blue" alt="Handbook"></a>
 </p>
 
-Wrapper npm per [Portlight](https://github.com/mcp-tool-shop-org/portlight) — un'interfaccia a riga di comando (CLI) per una strategia marittima incentrata sul commercio. Un solo comando, non è necessario Python.
+Gioco di strategia marittima incentrato sul commercio. Costruisci una carriera commerciale in cinque regioni attraverso l'arbitraggio delle rotte, i contratti, le infrastrutture, la finanza e la reputazione, il tutto direttamente dalla console. Non è richiesta alcuna conoscenza di Python.
 
-## Cos'è Portlight?
-
-Portlight è un gioco di strategia a terminale in cui si costruisce una carriera commerciale in un'economia mediterranea e dell'Africa occidentale in continua evoluzione. Si acquistano merci a basso prezzo, si percorrono rotte pericolose, si vendono a prezzi elevati e si reinvestono i profitti in infrastrutture, reputazione e vantaggi commerciali.
-
-A differenza della maggior parte dei giochi di commercio che semplificano il commercio in un semplice numero in aumento, Portlight considera il commercio come una disciplina commerciale:
-
-- **I prezzi reagiscono alle vostre transazioni.** Se scaricate grandi quantità di grano in un porto, il prezzo crolla. Ogni vendita modifica il mercato locale.
-- **I viaggi comportano rischi reali.** Tempeste, pirati, ispezioni: le vostre provviste, lo scafo e l'equipaggio sono importanti.
-- **I contratti richiedono prove.** È necessario consegnare le merci giuste al porto giusto, con una tracciabilità della provenienza.
-- **Le infrastrutture modificano il modo in cui commerciate.** I magazzini stoccano le merci, i broker migliorano i contratti, le licenze sbloccano l'accesso a funzionalità avanzate.
-- **La finanza è un'arma a doppio taglio.** Il credito vi permette di agire più rapidamente. Se non riuscite a ripagarlo, vi verranno chiuse le porte.
-- **Quattro percorsi per la vittoria.** Casa commerciale legale, rete clandestina, influenza oceanica o impero commerciale: il gioco valuta ciò che avete effettivamente costruito.
-
-Tre tipi di capitani (Mercante, Contrabbandiere, Navigatore), 10 porti, 8 merci, 17 rotte, 27 tappe e un sistema completo di assicurazione/credito.
-
-## Avvio rapido
+## Installazione
 
 ```bash
 npx @mcptoolshop/portlight new "Captain Hawk" --type merchant
-npx @mcptoolshop/portlight market
-npx @mcptoolshop/portlight buy grain 10
-npx @mcptoolshop/portlight sail al_manar
-npx @mcptoolshop/portlight advance
-npx @mcptoolshop/portlight sell grain 10
 ```
 
 Oppure, installate globalmente:
@@ -48,25 +28,101 @@ npm install -g @mcptoolshop/portlight
 portlight new "Captain Hawk" --type merchant
 ```
 
-## Come funziona
+Disponibile anche tramite pip: `pip install portlight`
+
+## Perché Portlight
+
+La maggior parte dei giochi di commercio semplificano il commercio riducendolo a un numero che aumenta. Portlight considera il commercio come una disciplina commerciale:
+
+- **I prezzi reagiscono alle tue transazioni.** Se scarichi grandi quantità di grano in un porto, il prezzo crolla. Ogni vendita modifica il mercato locale.
+- **I porti hanno vere e proprie identità economiche.** Porto Novo produce grano a basso costo. Silk Haven esporta seta in grandi quantità. Queste sono caratteristiche strutturali, non casuali.
+- **I viaggi comportano dei rischi.** Tempeste, pirati, ispezioni, pericoli stagionali. Le tue provviste, lo scafo e l'equipaggio sono importanti.
+- **I contratti richiedono prove.** Consegna le merci giuste al porto giusto entro la scadenza. La provenienza viene tracciata.
+- **Le infrastrutture cambiano il modo in cui fai commercio.** I magazzini stoccano le merci. I broker migliorano i contratti. Le licenze sbloccano l'accesso a servizi premium.
+- **La reputazione apre e chiude le porte.** Fiducia commerciale, controlli doganali, posizione regionale e contatti nel sottobosco: quattro fattori che influenzano ciò che puoi fare e dove.
+- **Il gioco tiene conto di ciò che hai costruito.** La tua storia commerciale, le infrastrutture, la reputazione e le rotte formano un profilo di carriera. Quattro percorsi di vittoria distinti, basati sul tipo di commerciante che sei diventato.
+
+## Il Mondo
+
+Cinque regioni. Venti porti. Quaranta-tre rotte. Un'economia vivente.
+
+| Regione | Porti | Personaggio |
+|--------|-------|-----------|
+| **Mediterranean** | Porto Novo, Al-Manar, Silva Bay, Corsair's Rest | Grano, legname, mercati delle spezie. Acque iniziali sicure. |
+| **North Atlantic** | Ironhaven, Stormwall, Thornport | Ferro, armi, commercio militare. Controlli rigorosi. |
+| **West Africa** | Sun Harbor, Palm Cove, Iron Point, Pearl Shallows | Cotone, rum, perle. Provviste più economiche. |
+| **East Indies** | Jade Port, Monsoon Reach, Silk Haven, Crosswind Isle, Dragon's Gate, Spice Narrows | Seta, spezie, porcellana, tè. Margini più alti. Rischio dei monsoni. |
+| **South Seas** | Ember Isle, Typhoon Anchorage, Coral Throne | Perle, medicinali. Acque di fine gioco più remote. |
+
+134 PNG (personaggi non giocanti) nominati in ogni porto. Quattro fazioni pirata che controllano diverse aree. Condizioni meteorologiche stagionali che modificano i pericoli e la domanda. Un livello culturale con feste, superstizioni e morale dell'equipaggio.
+
+## Nove Capitani
+
+| Capitano | Base | Vantaggio | Compromesso |
+|---------|------|------|-----------|
+| **Merchant** | Porto Novo | Prezzi migliori, la fiducia cresce rapidamente | Penalità di "calore" raddoppiate |
+| **Smuggler** | Corsair's Rest | Mercato nero, commercio di contrabbando | Maggiore "calore", più ispezioni |
+| **Navigator** | Monsoon Reach | Navi più veloci, maggiore autonomia | Posizione iniziale più debole |
+| **Privateer** | Ironhaven | Combattimento navale, vantaggio negli abbordaggi | Scarsa reputazione commerciale |
+| **Corsair** | Corsair's Rest | Equilibrio tra combattimento e commercio | Maestro di nulla |
+| **Scholar** | Jade Port | Vantaggio informativo, contratti migliori | Capitale iniziale basso, fragile |
+| **Merchant Prince** | Porto Novo | Alto capitale iniziale, accesso premium | Tariffe più alte, bersaglio dei pirati |
+| **Dockhand** | Crosswind Isle | Equipaggio più economico, tenace | Capitale iniziale più basso |
+| **Bounty Hunter** | Stormwall | Maestria nel combattimento, posizione nella fazione | Prezzi bassi, diffidenza |
+
+## Avvio rapido
+
+```bash
+npx @mcptoolshop/portlight new "Captain Hawk" --type merchant
+npx @mcptoolshop/portlight market
+npx @mcptoolshop/portlight buy grain 10
+npx @mcptoolshop/portlight routes
+npx @mcptoolshop/portlight sail al_manar
+npx @mcptoolshop/portlight advance
+npx @mcptoolshop/portlight sell grain 10
+npx @mcptoolshop/portlight milestones
+```
+
+## Sistemi
+
+**Economia** — Prezzi guidati dalla scarsità in 20 porti, 18 merci, 43 rotte. Le penalità per l'eccesso di offerta puniscono lo "scarico" di grandi quantità. I modificatori regionali della domanda significano che ogni porto ha una chiara identità di importazione/esportazione.
+
+**Viaggi** — Viaggi di più giorni che includono condizioni meteorologiche, incontri con pirati e ispezioni. Le provviste si consumano quotidianamente. Lo scafo subisce danni. Le zone pericolose stagionali modificano le rotte sicure.
+
+**Contratti** — Sei famiglie legate da fiducia e prestigio. Approvvigionamento, rimedi alla carenza, beni di lusso discreti, trasporto di ritorno, circuiti e commissioni di fazioni. Scadenze reali, conseguenze reali.
+
+**Reputazione** — Quattro aspetti: prestigio regionale, fiducia commerciale, attenzione delle autorità doganali e legami con il sottobosco. Diversi capitani adottano diverse "economie" morali.
+
+**Combattimento** — Combattimento personale (triangolo delle posizioni) con 7 armi da mischia, 7 armi a distanza e stili di combattimento regionali. Combattimento navale con abbordaggi e cannoni.
+
+**Fazioni Pirata** — Crimson Tide, Iron Wolves, Deep Reef Brotherhood, Monsoon Syndicate. Ognuna con il proprio territorio, capitani nominati e atteggiamento nei vostri confronti.
+
+**Infrastrutture** — Magazzini, uffici di broker, licenze. Manutenzione reale. Ognuna modifica i tempi, la portata o l'accesso al commercio.
+
+**Finanza** — Assicurazioni e credito. Leva finanziaria con conseguenze.
+
+**Compagni** — Cinque ruoli di ufficiale con personalità, morale e fattori scatenanti per la partenza.
+
+**Carriera** — 27 tappe fondamentali. 13 etichette di profilo. Quattro percorsi di vittoria: Casa Commerciale Legale, Rete Ombra, Portata Oceanica, Impero Commerciale.
+
+## Percorsi di Vittoria
+
+- **Casa Commerciale Legale** — Alta fiducia, contratti premium, reputazione impeccabile, vasta infrastruttura.
+- **Rete Ombra** — Margini di lusso sotto controllo, gestione del rischio, operazioni resilienti.
+- **Portata Oceanica** — Accesso alle Indie Orientali, infrastrutture distanti, padronanza delle rotte.
+- **Impero Commerciale** — Infrastrutture ovunque, diversificazione delle entrate, leva finanziaria.
+
+## Come Funziona Questo Pacchetto
 
 Questo pacchetto scarica il file binario precompilato di Portlight per la vostra piattaforma da GitHub Releases e lo memorizza localmente. Non è necessaria l'installazione di Python.
 
 | Considerazioni | Dettagli |
 |---------|--------|
 | **Network** | Solo HTTPS verso il CDN di `github.com` |
-| **Filesystem** | Scrive solo nella cache dell'utente (`~/.cache/mcptoolshop/portlight/`) |
+| **Filesystem** | Solo cache utente (`~/.cache/mcptoolshop/portlight/`) |
 | **Verification** | Controllo del checksum SHA256 ad ogni download |
-| **Telemetry** | Nessuno. Nessun tracciamento, nessuna analisi, nessuna trasmissione di dati. |
+| **Telemetry** | Nessuno |
 | **Platforms** | Windows (x64), macOS (x64/arm64), Linux (x64) |
-
-## Disponibile anche tramite pip
-
-Se avete Python installato:
-
-```bash
-pip install portlight
-```
 
 ## Sicurezza
 
@@ -76,10 +132,12 @@ pip install portlight
 - Nessuna telemetria, nessun segreto, nessuna credenziale memorizzata
 - Nessun accesso alla rete oltre al download iniziale del file binario
 
-Consultare il file [SECURITY.md](SECURITY.md) per la politica di sicurezza completa.
+Consultare [SECURITY.md](SECURITY.md) per la politica completa.
 
 ## Licenza
 
 MIT
+
+---
 
 Creato da <a href="https://mcp-tool-shop.github.io/">MCP Tool Shop</a>

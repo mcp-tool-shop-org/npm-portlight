@@ -11,14 +11,16 @@ All Portlight commands work identically through the npm wrapper. Prefix with `np
 
 | Group | Commands | Description |
 |-------|----------|-------------|
-| **Setup** | `new`, `load`, `save` | Create captains, manage save files |
+| **Setup** | `new`, `captain-select`, `load`, `save` | Create captains (9 types), manage saves |
 | **Trading** | `market`, `buy`, `sell`, `cargo` | Inspect prices, trade goods |
-| **Navigation** | `routes`, `sail`, `advance`, `port` | Plan and execute voyages |
-| **Ship** | `provision`, `repair`, `hire` | Maintain your vessel |
+| **Navigation** | `routes`, `sail`, `advance`, `port`, `map` | Plan and execute voyages, view the world map |
+| **Ship** | `provision`, `repair`, `hire`, `shipyard`, `fleet` | Maintain, upgrade, and manage vessels |
 | **Contracts** | `contracts`, `accept`, `obligations`, `abandon` | Commercial agreements |
-| **Finance** | `credit`, `repay` | Credit and debt management |
+| **Finance** | `credit`, `repay`, `insure` | Credit, debt, and insurance |
 | **Infrastructure** | `infra`, `warehouse`, `broker`, `license` | Build your trade house |
-| **Career** | `milestones`, `status`, `ledger` | Track progress and history |
+| **Career** | `captain`, `reputation`, `milestones`, `status`, `ledger` | Track progress and standing |
+| **World** | `map` | ASCII world map with ports, routes, and regions |
+| **Interface** | `tui` | Interactive terminal dashboard (Textual) |
 | **Help** | `guide` | In-game command reference |
 
 ## Wrapper-specific behavior
@@ -41,6 +43,29 @@ npm install -g @mcptoolshop/portlight@latest
 ```
 
 The new version will download the updated binary on first run.
+
+### Clearing the cache
+
+If you need to force a fresh download (e.g., after a corrupted download), delete the cache directory for your platform:
+
+```bash
+# Linux/macOS
+rm -rf ~/.cache/mcptoolshop/portlight/
+
+# Windows (PowerShell)
+Remove-Item -Recurse "$env:LOCALAPPDATA\mcptoolshop\portlight\"
+```
+
+The next run will re-download and re-verify the binary automatically.
+
+### Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| `Unsupported platform` error | Your OS/architecture is not supported. See the platform table above. On Apple Silicon, try `arch -x86_64 npx @mcptoolshop/portlight ...` |
+| Download fails | Check your internet connection. The wrapper downloads from `github.com` — ensure it is not blocked by a firewall or proxy. |
+| Checksum mismatch | The download may have been corrupted. Delete the cache directory (see above) and try again. |
+| `EACCES` permission error | You may need to fix npm permissions. See the [npm docs on permissions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally). |
 
 ## Security
 
